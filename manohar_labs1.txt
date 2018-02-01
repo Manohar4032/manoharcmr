@@ -1,0 +1,33 @@
+create a file using mkdir and user name
+we change the directory by using cd user name
+creating vim text
+then usually we type some sentences to perform the commands
+the commands which are used:
+x-to delete the unwanted character.
+u-to undo the last command and u to undo the whole line.
+ctrl-R to redo.
+A to append text at the end.
+:wq to save and exit.
+:ql to trash all changes.
+dw- move the cursor to the begging of the word to delete that word.
+2w-to move the cursor two words forward.
+3e-to the cursor to the end of the third word forward.
+0(zero)to move to the start of the line.
+d2w-which delets 2 words nujmber can be changed for deleting the number of consecutive words like d3w.
+dd to delete the line .
+p-puts the previous deleted text after the cursor.
+r-to replace the letter .
+g- to move you to the bottom of the file.
+gg-to the start of the file.
+% to find matching brackets.
+:l to run shell commands .
+:w -test (where test is the filename you choose).save yhe file.
+v-starts visual mode for selecting the lines and you can perform on that like d delete.
+:r- filename will insert the content into the current file.
+R -to replace more than one character.
+y-operator to copy the text using vvisual mode and p to paste it.
+yw - (copy) yanks one word.
+o-opens the line above the cursor.
+a-inserts text after the end of line.
+e- command moves to the end of the word.
+ctrl-w to jump from one window to another.                           
