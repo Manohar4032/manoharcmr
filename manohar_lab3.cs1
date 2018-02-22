@@ -1,0 +1,59 @@
+enter into the respective directory
+using libre office create a table
+then save that file with csv extension
+then perform commands in terminal 
+ 
+cs2016a117@user-H110M-S2:~/mano$ head -n 5 mano1a.ods.csv
+user id,name,cgpa
+a1,aman,9.5
+a2,arun,8.5
+a3,arayan,9.6
+a4,ajay,7.5
+
+2016a117@user-H110M-S2:~/mano$ tail -n 5 mano1a.ods.csv
+a11,manikanta,5.6
+a12,manohar,6.6
+a13,melvin,7.6
+a14,abidh,7.9
+a15,ravi,8.8
+
+
+cs2016a117@user-H110M-S2:~/mano$ sort mano1a.ods.csv
+A01,aman,9.5
+A02,arun,8.5
+A03,arayan,9.6
+A04,ajay,7.5
+A05,harshith,6.5
+A06,gaurav,4.9
+A07,kishore ,8.3
+A08,lavisha,5.9
+A09,vineeth,7.6
+A10,manasa,8.4
+A11,manikanta,5.6
+A12,manohar,6.6
+A13,melvin,7.6
+A14,abidh,7.9
+A15,ravi,8.8
+user id,name,cgpa
+ 
+cs2016a117@user-H110M-S2:~/mano$ cut -d, -f 3 mano1a.ods.csv
+cgpa
+9.5
+8.5
+9.6
+7.5
+6.5
+4.9
+8.3
+5.9
+7.6
+8.4
+5.6
+6.6
+7.6
+7.9
+
+cs2016a117@user-H110M-S2:~/mano$ wc -l mano1a.ods.csv
+16 mano1a.ods.csv
+
+
