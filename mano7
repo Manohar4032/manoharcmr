@@ -1,0 +1,64 @@
+The commands which are file related 
+
+1:cp=it is used to copy the source form one file to another file
+ex:cs2016a117@user-H110M-S2:~/work$ cp T1 T2
+The information in T1 will be copied to T2
+
+2:rm file name:this command is used to remove the file
+cs2016a117@user-H110M-S2:~/work$ rm T1
+the T1 file is removed
+
+3:mv command is used to move the information from one file to another
+cs2016a117@user-H110M-S2:~/work$ mv T2 T3
+The information in the T2 file is moved to T3
+
+4:cmp is used to compare the files
+user@user-H110M-S2:/home/cs2016a117/work$ cmp test test1
+cmp: EOF on test after byte 67, line 1
+
+5:diff command is used see the difference of the two files
+ex:user@user-H110M-S2:/home/cs2016a117/work$ diff test test1
+1a2
+> and in the afternoon we have extra curricular activities
+
+6:comm command is used to see what is common
+ex:user@user-H110M-S2:/home/cs2016a117/work$ comm test test1
+		today is thursday and we are in the unix and shell programming lab
+	and in the afternoon we have extra curricular activities
+
+setting permission to files
+
+1:chmod command is used to give the permission
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+then
+ls -l is used to check it
+cs2016a117@user-H110M-S2:~/work$ chmod 700 T2
+cs2016a117@user-H110M-S2:~/work$ ls -l
+total 12
+-rwxrwxrwx 1 cs2016a117 cs2016a117 5 Mar  1 09:04 T1
+-rwx------ 1 cs2016a117 cs2016a117 6 Mar  1 09:06 T2
+-rw-r--r-- 1 cs2016a117 cs2016a117 6 Mar  1 09:05 T3
+from the above lines we can see the permissions given;
+
+find commad is used to find the files
+chgrp is used to change the group
+chown is used to change the  owner
+ex:
+user@user-H110M-S2:/home/cs2016a117/work$ sudo chgrp cs2016a117 test1
+user@user-H110M-S2:/home/cs2016a117/work$ ls -l
+total 20
+-rwxrwxrwx 1 cs2016a117 cs2016a117  5 Mar  1 09:04 T1
+-rwx------ 1 cs2016a117 cs2016a117  6 Mar  1 09:06 T2
+-rwxrwxrwx 1 cs2016a117 cs2016a117  6 Mar  1 09:05 T3
+-rw-r--r-- 1 cs2016a117 cs2016a117 67 Mar  1 09:45 test
+-rw-r--r-- 1 root       cs2016a117 67 Mar  1 09:46 test1
+user@user-H110M-S2:/home/cs2016a117/work$ sudo chown cs2016a117 test1
+user@user-H110M-S2:/home/cs2016a117/work$ ls -l
+total 20
+-rwxrwxrwx 1 cs2016a117 cs2016a117  5 Mar  1 09:04 T1
+-rwx------ 1 cs2016a117 cs2016a117  6 Mar  1 09:06 T2
+-rwxrwxrwx 1 cs2016a117 cs2016a117  6 Mar  1 09:05 T3
+-rw-r--r-- 1 cs2016a117 cs2016a117 67 Mar  1 09:45 test
+-rw-r--r-- 1 cs2016a117 cs2016a117 67 Mar  1 09:46 test1
+
+
