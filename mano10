@@ -1,0 +1,53 @@
+The syntax for the awk command is
+awk options 'selection _criteria {action }' input-file > output-file
+cat > filename
+give some data
+ex:ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000 
+
+now use the command:$ awk '{print}' employee.txt
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000 
+
+PRINT THE LINES WHICH MATCHES WITH THE A GIVEN PATTERN
+command:$ awk '/manager/ {print}' employee.txt 
+ajay manager account 45000
+varun manager sales 50000
+amit manager account 47000 
+
+SPLIT A LINE INTO FIELDS
+COMMAND:$ awk '{print $1,$4}' employee.txt
+ajay 45000
+sunil 25000
+varun 50000
+amit 47000
+tarun 15000
+deepak 23000
+sunil 13000
+satvik 80000 
+
+NF: NF command keeps a count of the number of fields within the current input record.
+$ awk '{print $1,$NF}' employee.txt 
+Output:
+
+ajay 45000
+sunil 25000
+varun 50000
+amit 47000
+tarun 15000
+deepak 23000
+sunil 13000
+satvik 80000 
+
